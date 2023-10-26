@@ -1,19 +1,14 @@
 package com.ecommerce.product.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.springframework.data.annotation.Id;
-
-import java.util.UUID;
+import lombok.*;
 
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProductRequest {
     private String description;
-    private Float value;
+    private Float price;
 
 }
