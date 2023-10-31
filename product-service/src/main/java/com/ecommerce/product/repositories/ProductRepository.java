@@ -1,11 +1,10 @@
-package com.ecommerce.product.repository;
+package com.ecommerce.product.repositories;
 
-import com.ecommerce.product.entity.Product;
+import com.ecommerce.product.model.Product;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
-
 @Repository
 public interface ProductRepository extends MongoRepository<Product, UUID> {
 }
